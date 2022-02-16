@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>share_import</id>
+	<name>Share import</name>
+	<summary>Share import</summary>
+	<description>
+		Import external links from csv to your instance
+	</description>
+	<version>0.0.1</version>
+	<licence>agpl</licence>
+	<author mail="vitor@php.rio" homepage="https://github.com/vitormattos">Vitor Mattos</author>
+	<namespace>ShareImport</namespace>
+	<category>files</category>
+	<website>https://github.com/librecodecoop/share_import</website>
+	<bugs>https://github.com/librecodecoop/share_import/issues</bugs>
+	<repository type="git">https://github.com/librecodecoop/share_import.git</repository>
+	<screenshot small-thumbnail="https://raw.githubusercontent.com/librecodecoop/share_import/master/screenshots/1-small.png">https://raw.githubusercontent.com/librecodecoop/share_import/master/screenshots/1.png</screenshot>
+	<dependencies>
+		<nextcloud min-version="22" max-version="24"/>
+	</dependencies>
+	<commands>
+		<command>OCA\ShareImport\Command\Import</command>
+	</commands>
+</info>
